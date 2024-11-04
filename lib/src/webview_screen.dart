@@ -66,10 +66,6 @@ class _WebviewScreenState extends State<WebviewScreen> {
                   });
                 parseResult(url);
               }
-              if (url.toString().contains("paymentrouter") ||
-                  url.toString().contains("paymentcancel")) {
-                Navigator.pop(context);
-              }
             },
             onPageStarted: (url) {
               log('onPageStarted $url');
